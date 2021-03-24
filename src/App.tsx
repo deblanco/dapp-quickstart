@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { ToastProvider } from 'react-toast-notifications'
 import { ThemeProvider } from 'styled-components'
 import { Theme } from './Styles/Theme'
-import { AppWrapper } from './Styles/App'
+import { AppWrapper, BodyWrapper } from './Styles/App'
 import { Header } from './Components/Header'
+import { Swap } from './Views/Swap'
 
 function App() {
   return (
@@ -14,13 +15,15 @@ function App() {
         <ToastProvider autoDismissTimeout={3000} autoDismiss={true}>
           <AppWrapper>
             <Header />
-            <Router>
-              <Switch>
-                <Route path="/">
-                  <p>test</p>
-                </Route>
-              </Switch>
-            </Router>
+            <BodyWrapper>
+              <Router>
+                <Switch>
+                  <Route path="/">
+                    <Swap />
+                  </Route>
+                </Switch>
+              </Router>
+            </BodyWrapper>
           </AppWrapper>
         </ToastProvider>
       </RecoilRoot>

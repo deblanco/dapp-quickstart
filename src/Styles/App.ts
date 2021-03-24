@@ -7,3 +7,9 @@ export const AppWrapper = styled.div`
   background: ${(props) => props.theme.grey};
   color: ${(props) => props.theme.secondaryColor};
 `
+
+export const BodyWrapper = styled.div`
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+`
