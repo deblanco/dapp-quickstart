@@ -1,12 +1,13 @@
 import React from 'react'
-import { TokenSelector } from './Components/TokenSelector'
+import { TokenInput } from './Components/TokenInput'
 import { SwapWrapper } from './Style'
 
 export const Swap = () => {
   return (
     <SwapWrapper>
       <h1>Swap</h1>
-      <TokenSelector />
+      <TokenInput type={'from'} />
+      <TokenInput type={'to'} />
     </SwapWrapper>
   )
 }

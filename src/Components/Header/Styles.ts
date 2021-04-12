@@ -16,3 +16,16 @@ export const ConnectWallet = styled.span`
   font-weight: 600;
   cursor: pointer;
 `
+
+export const ConnectedWalletWrapper = styled.div`
+  display: flex;
+  background: ${(props) => props.theme.grey};
+  border-radius: ${(props) => props.theme.borderRadius};
+`
+
+export const ConnectedWalletBalance = styled(ConnectWallet)`
+  background: ${(props) => props.theme.grey};
+  color: #fff;
+`
+
+export const ConnectedWalletAddress = styled(ConnectWallet)``
